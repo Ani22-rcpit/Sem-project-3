@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Planner</title>
-  <link rel="stylesheet" href="dashboard.css">
-  <script src="dashboard.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="https://img.icons8.com/ios-filled/50/ff6b35/book.png" alt="logo">
-      <div>
-        <h2>To Do planner</h2>
-        <p>Your academic success companion</p>
-      </div>
-    </div>
-    <div class="notification">
-      <img src="https://img.icons8.com/ios-glyphs/30/000000/bell.png" alt="notifications">
-    </div>
-  </header>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/50/ff6b35/book.png" alt="logo">
+            <div>
+                <h2>To Do planner</h2>
+                <p>Your academic success companion</p>
+            </div>
+        </div>
+        <div class="notification">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/bell.png" alt="notifications">
+        </div>
+    </header>
 
-  <!-- Task Summary -->
-  <section class="task-summary">
-    <div class="card">
-      <h3>Total Tasks</h3>
-      <p>0</p>
-    </div>
-    <div class="card">
-      <h3>Completed</h3>
-      <p>0</p>
-    </div>
-    <div class="card">
-      <h3>Pending</h3>
-      <p>0</p>
-    </div>
-    <div class="card">
-      <h3>Overdue</h3>
-      <p>0</p>
-    </div>
-  </section>
+    <!-- Task Summary -->
+    <section class="task-summary">
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <p>0</p>
+        </div>
+        <div class="card">
+            <h3>Completed</h3>
+            <p>0</p>
+        </div>
+        <div class="card">
+            <h3>Pending</h3>
+            <p>0</p>
+        </div>
+        <div class="card">
+            <h3>Overdue</h3>
+            <p>0</p>
+        </div>
+    </section>
 
-  <!-- Status -->
-  <section class="status">
-    <p>✅ All caught up! <br> No urgent tasks at the moment.</p>
-  </section>
+    <!-- Status -->
+    <section class="status">
+        <p>✅ All caught up! <br> No urgent tasks at the moment.</p>
+    </section>
 
-  <!-- Subjects -->
-  <section class="subjects">
-    <div class="subject-header">
-      <h3>📚 Subjects</h3>
-      <button class="btn">+ Add Subject</button>
-    </div>
-    <div class="subject-list">
-      <span class="subject math">Engineering Mathematics I</span>
-      <span class="subject science">Chemistry</span>
-      <span class="subject english">Engineering Graphics</span>
-      <span class="subject history">Programming in C</span>
-      <span class="subject cs">Effective Communication Skills</span>
-    </div>
-  </section>
+    <!-- Subjects -->
+    <section class="subjects">
+        <div class="subject-header">
+            <h3>📚 Subjects</h3>
+            <button class="btn">+ Add Subject</button>
+        </div>
+        <div class="subject-list">
+            <span class="subject math">Engineering Mathematics I</span>
+            <span class="subject science">Chemistry</span>
+            <span class="subject english">Engineering Graphics</span>
+            <span class="subject history">Programming in C</span>
+            <span class="subject cs">Effective Communication Skills</span>
+        </div>
+    </section>
 
-  <!-- Add Task -->
-  <section class="add-task">
-    <h3>➕ Add New Task</h3>
-    <form>
-      <input type="text" placeholder="Task Title e.g., perform today loop function code">
-      <select>
-        <option>Select subject</option>
-        <option>Mathematics</option>
-        <option>Graphics</option>
-        <option>Ecs</option>
-        <option>Chemistry</option>
-        <option>Programming in C</option>
-      </select>
-      <textarea placeholder="Description (Optional)"></textarea>
-      <div class="row">
-        <select>
-          <option>Priority: Medium</option>
-          <option>Priority: High</option>
-          <option>Priority: Low</option>
-        </select>
-        <input type="date">
-      </div>
-      <button type="submit" class="btn full">Add Task</button>
-    </form>
-  </section>
+    <!-- Add Task -->
+    <section class="add-task">
+        <h3>➕ Add New Task</h3>
+        <form>
+            <input type="text" placeholder="Task Title e.g., perform today loop function code">
+            <select>
+                <option>Select subject</option>
+                <option>Mathematics</option>
+                <option>Graphics</option>
+                <option>Ecs</option>
+                <option>Chemistry</option>
+                <option>Programming in C</option>
+            </select>
+            <textarea placeholder="Description (Optional)"></textarea>
+            <div class="row">
+                <select>
+                    <option>Priority: Medium</option>
+                    <option>Priority: High</option>
+                    <option>Priority: Low</option>
+                </select>
+                <input type="date">
+            </div>
+            <button type="submit" class="btn full">Add Task</button>
+        </form>
+    </section>
 </body>
+
 </html>
