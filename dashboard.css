@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+  background: #121212;
+  color: #eaeaea;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 15px 30px;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.logo p {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.notification img {
+  width: 25px;
+  cursor: pointer;
+  filter: invert(1); /* Makes icons white */
+}
+
+/* Task Summary */
+.task-summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 20%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #bbb;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Status */
+.status {
+  background: #1e1e1e;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 14px;
+  border: 1px solid #333;
+}
+
+/* Subjects */
+.subjects {
+  background: #1e1e1e;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.subject-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subject {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: default;
+  color: #fff;
+}
+
+/* Subject colors (dark background-friendly) */
+.math { background: #003366; border: 1px solid #4a90e2; }
+.science { background: #0b3d0b; border: 1px solid #3cb371; }
+.english { background: #2b0b3d; border: 1px solid #a94fe2; }
+.history { background: #3d1b0b; border: 1px solid #e2894f; }
+.cs { background: #1a0b3d; border: 1px solid #5d4fe2; }
+
+/* Add Task */
+.add-task {
+  background: #1e1e1e;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  max-width: 700px; /* keeps form centered & spacious */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.add-task h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ff6b35;
+}
+
+.add-task form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* bigger gap between inputs */
+}
+
+.add-task input, 
+.add-task select,
+.add-task textarea {
+  padding: 14px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.add-task input::placeholder,
+.add-task textarea::placeholder {
+  color: #888;
+}
+
+.add-task textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-task .row {
+  display: flex;
+  gap: 15px; /* more space between date & priority */
+}
+
+.add-task .row select,
+.add-task .row input {
+  flex: 1;
+}
+
+/* Buttons */
+.btn {
+  background: #ff6b35;
+  color: #fff;
+  padding: 14px 18px; /* bigger button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff8657;
+  box-shadow: 0 0 12px #ff6b35;
+}
+
+.full {
+  width: 100%;
+  margin-top: 12px;
+}
